@@ -23,7 +23,7 @@ const run = async () => {
     try {
         await client.connect();
 
-        const db = client.db("umayer");
+        const db = client.db("concept-1");
         const usersCollection = db.collection("users");
 
         app.get('/user', async (req,res) => {
@@ -33,6 +33,7 @@ const run = async () => {
 
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
+        
     } finally {
         // await client.close();
     }
