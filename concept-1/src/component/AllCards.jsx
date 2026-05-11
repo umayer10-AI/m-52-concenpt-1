@@ -38,7 +38,7 @@ const AllCards = async ({p}) => {
       </span>
     </div>
 
-    <Button className="w-full  bg-linear-to-r from-green-500 to-blue-500 hover:bg-indigo-700 text-white py-2 rounded-xl font-semibold transition duration-300">
+    <Button className="w-full bg-linear-to-r from-green-500 to-blue-500 hover:bg-indigo-700 text-white py-2 rounded-xl font-semibold transition duration-300">
       Buy Now
     </Button>
 
