@@ -19,7 +19,7 @@ const page = async ({params}) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             src={product.image}
             alt={product.title}
-            className="w-full max-w-md rounded-2xl object-cover hover:scale-105 transition duration-500"
+            className="w-full h-90 max-w-md rounded-2xl object-cover hover:scale-105 transition duration-500"
           />
         </div>
 
