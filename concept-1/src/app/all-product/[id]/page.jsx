@@ -6,7 +6,6 @@ const page = async ({params}) => {
 
     const {id} = await params
     const product = await getId(id)
-    // console.log(data)
 
     return (
         <div>
