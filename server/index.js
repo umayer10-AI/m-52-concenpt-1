@@ -52,7 +52,8 @@ const run = async () => {
 
         app.post('/user', async (req,res) => {
             const newUser = req.body
-            console.log(newUser)
+            const result = await usersCollection.insertOne(newUser)
+            res.send(result)
         })
 
         await client.db("admin").command({ ping: 1 });

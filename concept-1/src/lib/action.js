@@ -14,8 +14,14 @@ export const deleteUser = async (id) => {
 }
 
 export const createUser = async (v) => {
-    const res = await fetch(`http://localhost:5000/user`)
+    const res = await fetch(`http://localhost:5000/user`,{
+        method: "POST",
+        headers: {
+            "content-type":"application/json"
+        },
+        body: JSON.stringify(v)
+    })
     const data = await res.json()
-    console.log(v)
+    console.log(data)
     return data
 }
