@@ -1,9 +1,9 @@
 import { getData } from '@/lib/data';
 import React from 'react';
 
-const AllCards = async () => {
+const Carts = async () => {
 
-    
+    const data = await getData()
     // console.log(data)
 
     return (
@@ -13,4 +13,4 @@ const AllCards = async () => {
     );
 };
 
-export default AllCards;
+export default Carts;
