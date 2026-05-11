@@ -17,13 +17,13 @@ const AllCards = async ({p}) => {
     alt="Gaming Headset"
   />
 
-  <div className="px-5 space-y-3">
+  <div className="p-5 space-y-3">
     
     <h2 className="text-2xl font-bold text-green-500">
       {p.title}
     </h2>
 
-    <p className="text-gray-400 text-sm">
+    <p className="text-gray-400 text-sm line-clamp-2">
       {p.description}
     </p>
 

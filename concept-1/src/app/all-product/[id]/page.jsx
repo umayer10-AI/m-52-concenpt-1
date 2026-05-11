@@ -61,11 +61,11 @@ const page = async ({params}) => {
           {/* Buttons */}
           <div className="flex gap-4 pt-4">
             <button className="bg-linear-to-r from-green-500 to-blue-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-semibold transition duration-300">
-              Add To Cart
+              Edit Card
             </button>
 
-            <button className="border border-cyan-600 bg-linear-to-r from-green-500 to-blue-500 text-transparent bg-clip-text w-fit hover:bg-indigo-50 px-8 py-3 rounded-xl font-semibold transition duration-300">
-              Wishlist
+            <button className="border border-red-500 text-red-500 hover:bg-indigo-50 px-8 py-3 rounded-xl font-semibold transition duration-300">
+              Delete
             </button>
           </div>
         </div>
