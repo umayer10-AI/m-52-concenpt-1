@@ -23,6 +23,7 @@ const page = async ({params}) => {
 
         <div className="p-8 flex flex-col justify-center space-y-6"> 
           <div>
+            {/* <h2>Hello</h2> */}
 
             <h1 className="text-4xl font-bold bg-linear-to-r from-green-500 to-blue-500 text-transparent bg-clip-text w-fit mt-4">
               {product.title}
