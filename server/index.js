@@ -67,7 +67,7 @@ const run = async () => {
                 $set: m
             }
             const result = await usersCollection.updateOne(filter,updateDocument)
-            res.send(updateDocument)
+            res.send(result)
         })
 
         await client.db("admin").command({ ping: 1 });

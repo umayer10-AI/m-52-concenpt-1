@@ -37,9 +37,9 @@ export const updateUser = async (id,v) => {
         body: JSON.stringify(v)
     })
     const data = await res.json()
-    if(data.insertedId){
+    if(data.matchedCount > 0){
         redirect('/all-product')
     }
-    // console.log(id,v)
+    console.log(data)
     return data
 }
