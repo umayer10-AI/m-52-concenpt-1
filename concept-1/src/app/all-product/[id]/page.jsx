@@ -1,3 +1,4 @@
+import DeleteBtn from '@/component/DeleteBtn';
 import { getId } from '@/lib/data';
 import Image from 'next/image';
 import React from 'react';
@@ -64,9 +65,7 @@ const page = async ({params}) => {
               Edit Card
             </button>
 
-            <button className="border border-red-500 text-red-500 hover:bg-indigo-50 px-8 py-3 rounded-xl font-semibold transition duration-300">
-              Delete
-            </button>
+            <DeleteBtn p={product._id}></DeleteBtn>
           </div>
         </div>
       </div>
