@@ -1,11 +1,10 @@
 "use client"
 import React from 'react';
-import {Check} from "@gravity-ui/icons";
 import {Button, FieldError, Form, Input, Label, TextField} from "@heroui/react";
 import { useForm } from 'react-hook-form';
 import { createUser } from '@/lib/action';
 
-const Addpage = () => {
+const Epage = ({id,p}) => {
 
     const {register,handleSubmit,formState: { errors },} = useForm()
 
@@ -20,7 +19,7 @@ const Addpage = () => {
 
                 <TextField
             isRequired
-            name="title"
+            name="title" defaultValue={p.title}
             validate={(value) => {
               if (value.length < 3) {
                 return "Name must be at least 3 characters";
@@ -35,7 +34,7 @@ const Addpage = () => {
 
                 <TextField
             isRequired
-            name="description"
+            name="description" defaultValue={p.description}
             validate={(value) => {
               if (value.length < 3) {
                 return "Name must be at least 3 characters";
@@ -50,7 +49,7 @@ const Addpage = () => {
 
                 <TextField
             isRequired
-            name="price" type='number'
+            name="price" type='number' defaultValue={p.price}
           >
             <Label>Price</Label>
             <Input placeholder="Enter price"  {...register("price")}/>
@@ -59,7 +58,7 @@ const Addpage = () => {
 
           <TextField
             isRequired
-            name="image"
+            name="image" defaultValue={p.image}
             validate={(value) => {
               if (value.length < 3) {
                 return "Name must be at least 3 characters";
@@ -68,13 +67,13 @@ const Addpage = () => {
             }}
           >
             <Label>Image URL</Label>
-            <Input placeholder="ImageUrl"  {...register("image")}/>
+            <Input placeholder="ImageUrl" {...register("image")}/>
             <FieldError />
           </TextField>
 
           <TextField
             isRequired
-            name="stock" type='number'
+            name="stock" type='number' defaultValue={p.stock}
           >
             <Label>Stock</Label>
             <Input placeholder="Enter stock"  {...register("stock")}/>
@@ -85,8 +84,7 @@ const Addpage = () => {
       
       <div className="flex gap-2">
         <Button type="submit">
-          <Check />
-          Submit
+          Update
         </Button>
         <Button type="reset" variant="secondary">
           Reset
@@ -97,4 +95,4 @@ const Addpage = () => {
     );
 };
 
-export default Addpage;
+export default Epage;

@@ -1,4 +1,5 @@
 import DeleteBtn from '@/component/DeleteBtn';
+import EditBtn from '@/component/EditBtn';
 import { getId } from '@/lib/data';
 import Image from 'next/image';
 import React from 'react';
@@ -61,9 +62,7 @@ const page = async ({params}) => {
 
           {/* Buttons */}
           <div className="flex gap-4 pt-4">
-            <button className="bg-linear-to-r from-green-500 to-blue-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-xl font-semibold transition duration-300">
-              Edit Card
-            </button>
+            <EditBtn p={product._id}></EditBtn>
 
             <DeleteBtn p={product._id}></DeleteBtn>
           </div>
