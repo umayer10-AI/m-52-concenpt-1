@@ -1,15 +1,13 @@
 import { getData } from '@/lib/data';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const AllCards = async ({p}) => {
 
-    
-    // console.log(data)
-
     return (
-        <div>
+        <Link href={`/all-product/${p._id}`}>
             <div className="max-w-sm rounded-2xl overflow-hidden h-full shadow-md shadow-cyan-600 border border-cyan-500 hover:scale-98 transition duration-500">
   
   <Image width={100} height={100}
@@ -46,7 +44,7 @@ const AllCards = async ({p}) => {
 
   </div>
 </div>
-        </div>
+        </Link>
     );
 };
 
