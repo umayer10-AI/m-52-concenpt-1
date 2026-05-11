@@ -9,7 +9,9 @@ const Carts = async () => {
 
     return (
         <div>
-            <AllCards></AllCards>
+            {
+                data.map(v => <AllCards key={v._id} p={v}></AllCards>)
+            }
         </div>
     );
 };
