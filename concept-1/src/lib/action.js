@@ -27,3 +27,19 @@ export const createUser = async (v) => {
     }
     return data
 }
+
+export const updateUser = async (id,v) => {
+    // const res = await fetch(`http://localhost:5000/user/${id}`,{
+    //     method: "PATCH",
+    //     headers: {
+    //         "content-type":"application/json"
+    //     },
+    //     body: JSON.stringify(v)
+    // })
+    // const data = await res.json()
+    // if(data.insertedId){
+    //     redirect('/all-product')
+    // }
+    console.log(id,v)
+    // return data
+}

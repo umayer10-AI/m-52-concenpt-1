@@ -2,7 +2,7 @@
 import React from 'react';
 import {Button, FieldError, Form, Input, Label, TextField} from "@heroui/react";
 import { useForm } from 'react-hook-form';
-import { createUser } from '@/lib/action';
+import { updateUser } from '@/lib/action';
 
 const Epage = ({id,p}) => {
 
@@ -10,7 +10,7 @@ const Epage = ({id,p}) => {
 
     const a = async (v) => {
         console.log(v)
-        await createUser(v)
+        await updateUser(id,v)
     }
 
     return (
