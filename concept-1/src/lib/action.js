@@ -5,10 +5,17 @@ export const deleteUser = async (id) => {
         method: "DELETE"
     })
     const data = await res.json()
-    
+
     if(data.deletedCount > 0){
         alert("Delete Successfully")
         redirect('/all-product')
     }
+    return data
+}
+
+export const createUser = async (v) => {
+    const res = await fetch(`http://localhost:5000/user`)
+    const data = await res.json()
+    console.log(v)
     return data
 }
