@@ -37,6 +37,7 @@ const run = async () => {
                 _id: new ObjectId(id)
             }
             const result = await usersCollection.findOne(query)
+            // console.log(result)
             res.json(result)
         })
 
