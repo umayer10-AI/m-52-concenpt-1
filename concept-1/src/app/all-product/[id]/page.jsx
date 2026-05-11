@@ -10,7 +10,7 @@ const page = async ({params}) => {
 
     return (
         <div>
-            <div className=" lex items-center justify-center p-6">
+            <div className="flex items-center justify-center p-6 my-10">
       <div className="max-w-6xl w-full bg-slate-800 rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2 gap-10">
         
         {/* Left Side */}
