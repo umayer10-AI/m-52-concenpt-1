@@ -37,8 +37,17 @@ const run = async () => {
                 _id: new ObjectId(id)
             }
             const result = await usersCollection.findOne(query)
-            // console.log(result)
             res.json(result)
+        })
+
+        app.delete('/user/:id', async (req,res) => {
+            const id = req.params.id
+            const query = {
+                _id: new ObjectId(id)
+            }
+            const result = await usersCollection.deleteOne(query)
+            console.log(result)
+            res.send(result)
         })
 
         await client.db("admin").command({ ping: 1 });
