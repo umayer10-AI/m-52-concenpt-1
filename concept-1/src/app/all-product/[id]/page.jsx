@@ -21,7 +21,6 @@ const page = async ({params}) => {
           />
         </div>
 
-        {/* Right Side */}
         <div className="p-8 flex flex-col justify-center space-y-6"> 
           <div>
 
