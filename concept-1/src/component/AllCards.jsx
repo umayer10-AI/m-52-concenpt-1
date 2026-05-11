@@ -35,7 +35,7 @@ const AllCards = async ({p}) => {
       </span>
 
       <span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-semibold">
-        In Stock: 20
+        In Stock: {p.stock}
       </span>
     </div>
 
