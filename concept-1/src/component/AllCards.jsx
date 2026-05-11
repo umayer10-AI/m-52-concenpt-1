@@ -1,4 +1,5 @@
 import { getData } from '@/lib/data';
+import Image from 'next/image';
 import React from 'react';
 
 const AllCards = async () => {
@@ -8,7 +9,41 @@ const AllCards = async () => {
 
     return (
         <div>
-            
+            <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg border border-cyan-500 hover:scale-105 transition duration-300">
+  
+  <Image width={100} height={100}
+    className="w-full h-56 object-cover"
+    src="https://i.ibb.co/ZYW3VTp/headset.jpg"
+    alt="Gaming Headset"
+  />
+
+  <div className="p-5 space-y-3">
+    
+    <h2 className="text-2xl font-bold text-gray-800">
+      Gaming Headset
+    </h2>
+
+    <p className="text-gray-600 text-sm">
+      Surround sound gaming headset with noise-canceling microphone.
+    </p>
+
+    <div className="flex items-center justify-between">
+      
+      <span className="text-2xl font-bold text-indigo-600">
+        $55
+      </span>
+
+      <span className="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-semibold">
+        In Stock: 20
+      </span>
+    </div>
+
+    <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 rounded-xl font-semibold transition duration-300">
+      Buy Now
+    </button>
+
+  </div>
+</div>
         </div>
     );
 };

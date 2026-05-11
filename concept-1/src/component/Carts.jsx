@@ -1,5 +1,6 @@
 import { getData } from '@/lib/data';
 import React from 'react';
+import AllCards from './AllCards';
 
 const Carts = async () => {
 
@@ -8,7 +9,7 @@ const Carts = async () => {
 
     return (
         <div>
-            
+            <AllCards></AllCards>
         </div>
     );
 };
