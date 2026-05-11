@@ -11,7 +11,7 @@ const page = async () => {
       <h2 className='text-3xl font-semibold my-5'>Popular Products</h2>
       <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
             {
-                data.slice(8,12).map(v => <AllCards key={v._id} p={v}></AllCards>)
+                data.slice(0,4).map(v => <AllCards key={v._id} p={v}></AllCards>)
             }
         </div>
     </div>

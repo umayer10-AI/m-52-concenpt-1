@@ -22,6 +22,8 @@ export const createUser = async (v) => {
         body: JSON.stringify(v)
     })
     const data = await res.json()
-    console.log(data)
+    if(data.insertedId){
+        redirect('/all-product')
+    }
     return data
 }
