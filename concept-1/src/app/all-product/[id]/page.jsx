@@ -12,7 +12,6 @@ const page = async ({params}) => {
             <div className="flex items-center justify-center p-6 my-10">
       <div className="max-w-6xl w-full bg-slate-800 rounded-3xl shadow-xl overflow-hidden grid md:grid-cols-2 gap-10">
         
-        {/* Left Side */}
         <div className="bg-linear-to-r from-green-600 to-blue-500 flex items-center justify-center p-8">
           <Image height={100} width={100}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
