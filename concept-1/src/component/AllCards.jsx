@@ -7,7 +7,7 @@ import React from 'react';
 const AllCards = async ({p}) => {
 
     return (
-        <Link href={`/all-product/${p._id}`}>
+        <div>
             <div className="max-w-sm rounded-2xl overflow-hidden h-full shadow-md shadow-cyan-600 border border-cyan-500 hover:scale-98 transition duration-500">
   
   <Image width={100} height={100}
@@ -17,7 +17,7 @@ const AllCards = async ({p}) => {
     alt="Gaming Headset"
   />
 
-  <div className="p-5 space-y-3">
+  <div className="px-5 space-y-3">
     
     <h2 className="text-2xl font-bold text-green-500">
       {p.title}
@@ -38,13 +38,14 @@ const AllCards = async ({p}) => {
       </span>
     </div>
 
+    <Link href={`/all-product/${p._id}`}>
     <Button className="w-full bg-linear-to-r from-green-500 to-blue-500 hover:bg-indigo-700 text-white py-2 rounded-xl font-semibold transition duration-300">
-      Buy Now
-    </Button>
+      Details
+    </Button></Link>
 
   </div>
 </div>
-        </Link>
+        </div>
     );
 };
 
