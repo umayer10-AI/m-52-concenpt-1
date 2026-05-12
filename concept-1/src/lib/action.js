@@ -40,6 +40,5 @@ export const updateUser = async (id,v) => {
     if(data.matchedCount > 0){
         redirect('/all-product')
     }
-    // console.log(data)
     return data
 }
