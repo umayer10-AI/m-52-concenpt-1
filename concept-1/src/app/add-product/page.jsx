@@ -10,13 +10,12 @@ const Addpage = () => {
     const {register,handleSubmit,formState: { errors },} = useForm()
 
     const a = async (v) => {
-        console.log(v)
         await createUser(v)
     }
 
     return (
         <div className='flex justify-center mt-10'>
-            <Form onSubmit={handleSubmit(a)} className="flex w-100 p-6 rounded-xl shadow-md shadow-cyan-500 border border-cyan-500 flex-col gap-4 ">
+            <Form onSubmit={handleSubmit(a)} className="flex w-100 p-6 rounded-xl shadow-md shadow-cyan-500 border border-cyan-500 flex-col gap-4">
 
                 <TextField
             isRequired
